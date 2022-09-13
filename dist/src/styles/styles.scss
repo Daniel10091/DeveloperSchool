@@ -1,0 +1,28 @@
+@import url('./global.css');
+@import url('./fonts/index.css');
+@import url('./variables/colors.css');
+@import url('./variables/measurements.css');
+@import url('./components/index.css');
+@import url('./components/Pages/index.css');
+
+body {
+  max-width: 100vw;
+  width: 100vw;
+  max-height: 100vh;
+  height: 100vh;
+  font-family: var(--Poppins);
+  color: var(--White);
+  background-color: var(--Black);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+iframe.app-layout {
+  width: 100%;
+  height: 100%;
+  // padding-block-start: 100px;
+  // border: 1px solid purple;
+}

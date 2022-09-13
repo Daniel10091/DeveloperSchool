@@ -1,0 +1,96 @@
+:root {
+  /* ========== Default ========== */
+
+  --Black: #000000;
+  --White: #FFFFFF;
+  
+  /* ========== Background ========== */
+
+  --EerieBlack01: #141414;
+  --EerieBlack02: #1E1E1E;
+  
+  /* ========== Border ========== */
+
+  --Onyx: #424242;
+
+  /* ========== Font ========== */
+
+  --White: #FFFFFF;
+  --Cultured: #F8F8F8;
+  --AliceBlue: #E9EFF3;
+  --Gainsboro: #D4DADF;
+  --LightGray: #C9D2D8;
+  --SilverSand: #BFC6CB;
+  --SilverChalice: #A6AEB3;
+  --QuickSilver: #9EA5AB;
+  --GrayWeb: #798085;
+  --SonicSilver: #797979;
+  --BlackCoral: #595F64;
+  --Independence: #4C516D;
+
+  /* ========== Primary ========== */
+
+  --DeepPink: #FF0099;
+  --EletricIndigo: #7000FF;
+  --Purple: #5906C1;
+  --SpringGreen: #00FF85;
+  --Capri: #00C2FF;
+  --LemonGlacier: #FAFF00;
+
+  /* ========== Secondary ========== */
+  
+  --Magenta: #FF00F2;
+  --HotMagenta: #FF00D0;
+  --ShockingPink: #FF00B3;
+  --PersianRose: #FF009D;
+  --FashionFuchsia: #FF00AE;
+  --MagentaProcess: #FF0090;
+  --ParadisePink: #FF0062;
+  --Phlox: #EA00FF;
+  --EletricPurple: #C800FF;
+  --PurpleX11: #AE00FF;
+  --VividViolet: #9900FF;
+  --EletricViolet: #8800FF;
+  --HanPurple: #5900FF;
+  --BlueRYB: #0044FF;
+  --UltimarineBlue: #0066FF;
+  --DodgerBlue: #0095FF;
+  --BlueJeans: #00B2FF;
+  --VividSkyBlue: #00C8FF;
+  --OrangePantone: #FF5900;
+  --Scarlet: #FF2F00;
+  --CandyAppleRed: #FF1500;
+  --RadicalRed: #FF0059;
+  --RedCrayola: #FF004D;
+  --RedMunsell: #FF0040;
+  --RedPigment: #FF002B;
+
+  /* ========== App ========== */
+  
+  --primaryColor: #FF0099;
+  --secondaryColor: #7000FF;
+
+  /* ========== Opacity ========== */
+
+  --DarkOpacity00: rgba(0, 0, 0, 0.05);
+  --DarkOpacity01: rgba(0, 0, 0, 0.1);
+  --DarkOpacity02: rgba(0, 0, 0, 0.2);
+  --DarkOpacity03: rgba(0, 0, 0, 0.3);
+  --DarkOpacity04: rgba(0, 0, 0, 0.4);
+  --DarkOpacity05: rgba(0, 0, 0, 0.5);
+  --DarkOpacity06: rgba(0, 0, 0, 0.6);
+  --DarkOpacity07: rgba(0, 0, 0, 0.7);
+  --DarkOpacity08: rgba(0, 0, 0, 0.8);
+  --DarkOpacity09: rgba(0, 0, 0, 0.9);
+
+  --lightOpacity00: rgba(255, 255, 255, 0.05);
+  --lightOpacity01: rgba(255, 255, 255, 0.1);
+  --lightOpacity02: rgba(255, 255, 255, 0.2);
+  --lightOpacity03: rgba(255, 255, 255, 0.3);
+  --lightOpacity04: rgba(255, 255, 255, 0.4);
+  --lightOpacity05: rgba(255, 255, 255, 0.5);
+  --lightOpacity06: rgba(255, 255, 255, 0.6);
+  --lightOpacity07: rgba(255, 255, 255, 0.7);
+  --lightOpacity08: rgba(255, 255, 255, 0.8);
+  --lightOpacity09: rgba(255, 255, 255, 0.9);
+}

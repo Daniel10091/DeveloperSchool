@@ -1,0 +1,17 @@
+:root {
+  --blur01: 10px;
+  --blur02: 20px;
+  --blur03: 30px;
+  --blur04: 40px;
+  --blur05: 50px;
+  --blur06: 60px;
+
+  --HeaderHeight: 100px;
+  --HeaderGap: 30px;
+
+  --SearchWidth: 30vw;
+  --SearchHeight: 50px;
+  --SearchSpaces: 14px;
+
+  --defaultSpace: 20px;
+}

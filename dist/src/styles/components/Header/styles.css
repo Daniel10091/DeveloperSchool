@@ -1,0 +1,331 @@
+header.app__header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: var(--HeaderHeight);
+  background-color: var(--EerieBlack02);
+  border-bottom: 1px solid var(--Onyx);
+}
+header.app__header nav.navbar {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header.app__header nav.navbar .container {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  grid-template-rows: 1fr;
+  align-items: center;
+  gap: var(--HeaderGap);
+}
+
+.navbar-header {
+  display: flex;
+  align-items: center;
+  gap: var(--HeaderGap);
+}
+.navbar-header .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-header .navbar-brand img {
+  width: 42px;
+  height: 42px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+.navbar-header .navbar-brand span {
+  font-size: 20px;
+  font-family: var(--FredokaOne);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.navbar-header .navbar-brand span:nth-child(2) {
+  color: var(--primaryColor);
+}
+.navbar-header .navbar-brand span:last-child {
+  color: var(--secondaryColor);
+}
+.navbar-header .app__search {
+  position: relative;
+}
+.navbar-header .app__search form.search-content {
+  width: var(--SearchWidth);
+  height: var(--SearchHeight);
+  display: flex;
+  align-items: center;
+  padding: var(--SearchSpaces);
+  gap: var(--SearchSpaces);
+  background-color: var(--EerieBlack01);
+  border-radius: 12px;
+}
+.navbar-header .app__search form.search-content ion-icon {
+  font-size: 20px;
+  color: var(--GrayWeb);
+}
+.navbar-header .app__search form.search-content input {
+  width: 100%;
+  height: 100%;
+  line-height: 0;
+  font-family: var(--SourceCodePro);
+  font-size: 15px;
+  color: var(--White);
+  background-color: transparent;
+  border: 0;
+}
+.navbar-header .app__search form.search-content input::-moz-placeholder {
+  color: var(--GrayWeb);
+}
+.navbar-header .app__search form.search-content input:-ms-input-placeholder {
+  color: var(--GrayWeb);
+}
+.navbar-header .app__search form.search-content input::placeholder {
+  color: var(--GrayWeb);
+}
+
+.navbar-theme {
+  position: relative;
+}
+.navbar-theme input {
+  display: none;
+}
+.navbar-theme .theme-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 64px;
+  height: 36px;
+  padding-inline: 8.5px;
+  background-color: var(--EerieBlack01);
+  border-radius: 10px;
+  cursor: pointer;
+}
+.navbar-theme .theme-toggle ion-icon {
+  font-size: 18px;
+  z-index: 10;
+  will-change: contents;
+  transition: all 0.2s ease;
+}
+.navbar-theme .theme-toggle ion-icon:first-child {
+  color: var(--LemonGlacier);
+  opacity: 0.5;
+}
+.navbar-theme .theme-toggle ion-icon:nth-child(2) {
+  color: var(--EletricIndigo);
+}
+.navbar-theme .theme-toggle .slider {
+  position: absolute;
+  left: 4px;
+  transform: translateX(28px);
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background-color: var(--EerieBlack02);
+  will-change: contents;
+  transition: all 0.2s ease;
+}
+.navbar-theme input:checked ~ .theme-toggle ion-icon:nth-child(1) {
+  opacity: 1;
+}
+.navbar-theme input:checked ~ .theme-toggle ion-icon:nth-child(2) {
+  opacity: 0.6;
+}
+.navbar-theme input:checked ~ .theme-toggle .slider {
+  transform: translateX(0px);
+}
+
+button.navbar-toggle {
+  width: 36px;
+  height: 36px;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: 0;
+  will-change: contents;
+  transition: all 0.2s ease;
+}
+button.navbar-toggle .icon-bar {
+  display: block;
+  width: 26px;
+  height: 3px;
+  background-color: var(--GrayWeb);
+  border-radius: 50px;
+  will-change: contents;
+  transition: all 0.2s ease;
+}
+button.navbar-toggle.is-active {
+  transform: rotate(-90deg);
+}
+button.navbar-toggle.is-active .icon-bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 6px);
+}
+button.navbar-toggle.is-active .icon-bar:nth-child(2) {
+  width: 0;
+}
+button.navbar-toggle.is-active .icon-bar:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -6px);
+}
+
+.navbar-collapse {
+  display: flex;
+  gap: var(--HeaderGap);
+}
+.navbar-collapse ul.nav {
+  display: flex;
+  align-items: center;
+  gap: var(--HeaderGap);
+}
+.navbar-collapse ul.nav li.navbar-item a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-block: 8px;
+}
+.navbar-collapse ul.nav li.navbar-item a label {
+  font-size: 16px;
+  color: var(--GrayWeb);
+  pointer-events: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  will-change: contents;
+  transition: all 0.2s ease;
+}
+.navbar-collapse ul.nav li.navbar-item a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  transform: translate(0, 16px);
+  width: 6px;
+  height: 6px;
+  border-radius: 50px;
+  background-color: var(--primaryColor);
+  pointer-events: none;
+  opacity: 0;
+  will-change: contents;
+  transition: all 0.2s ease;
+}
+.navbar-collapse ul.nav li.navbar-item a.is-active label {
+  color: var(--primaryColor);
+}
+.navbar-collapse ul.nav li.navbar-item a.is-active::before {
+  opacity: 1;
+  transform: translate(0, 2px);
+}
+.navbar-collapse ul.nav.navbar-right li.dropdown {
+  position: relative;
+}
+.navbar-collapse ul.nav.navbar-right li.dropdown button.navbar-avatar {
+  display: block;
+  width: 46px;
+  height: 46px;
+  padding: 2px;
+  background: linear-gradient(0deg, var(--secondaryColor) 0%, var(--primaryColor) 100%);
+  border-radius: 10px;
+  border: 0;
+}
+.navbar-collapse ul.nav.navbar-right li.dropdown button.navbar-avatar img {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+}
+.navbar-collapse ul.nav.navbar-right li.dropdown button.navbar-avatar .profile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translate(0, 10px);
+  -webkit-padding-before: 10px;
+          padding-block-start: 10px;
+  opacity: 0;
+  pointer-events: none;
+  will-change: contents;
+  transition: all 0.4s ease;
+}
+.navbar-collapse ul.nav.navbar-right li.dropdown button.navbar-avatar .profile-menu menu {
+  padding-inline: 10px;
+  padding-block: 10px;
+  background-color: var(--EerieBlack01);
+  box-shadow: 2px 4px 10px var(--DarkOpacity04);
+  border-radius: 12px;
+  border: 1px solid var(--EerieBlack02);
+}
+.navbar-collapse ul.nav.navbar-right li.dropdown button.navbar-avatar .profile-menu menu .menu-item {
+  min-width: 120px;
+}
+.navbar-collapse ul.nav.navbar-right li.dropdown button.navbar-avatar .profile-menu menu .menu-item a {
+  height: 34px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-inline: 10px;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  will-change: contents;
+  transition: all 0.2s ease-out;
+}
+.navbar-collapse ul.nav.navbar-right li.dropdown button.navbar-avatar .profile-menu menu .menu-item a ion-icon {
+  font-size: 18px;
+  color: var(--GrayWeb);
+}
+.navbar-collapse ul.nav.navbar-right li.dropdown button.navbar-avatar .profile-menu menu .menu-item a label {
+  font-size: 15px;
+  color: var(--GrayWeb);
+  pointer-events: none;
+}
+.navbar-collapse ul.nav.navbar-right li.dropdown button.navbar-avatar .profile-menu menu .menu-item a:hover {
+  background-color: var(--EerieBlack02);
+  border-color: var(--lightOpacity00);
+  transition: all 0.1s ease;
+}
+.navbar-collapse ul.nav.navbar-right li.dropdown button.navbar-avatar .profile-menu menu .menu-item:last-child a {
+  background-color: var(--primaryColor);
+}
+.navbar-collapse ul.nav.navbar-right li.dropdown button.navbar-avatar .profile-menu menu .menu-item:last-child a ion-icon {
+  font-size: 20px;
+  color: var(--White);
+}
+.navbar-collapse ul.nav.navbar-right li.dropdown button.navbar-avatar .profile-menu menu .menu-item:last-child a label {
+  color: var(--White);
+}
+.navbar-collapse ul.nav.navbar-right li.dropdown button.navbar-avatar:hover .profile-menu {
+  transform: translate(0, 0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#navbar ul li a.is-active label {
+  -webkit-animation: linkLabel 0.3s ease-out 0.12s;
+          animation: linkLabel 0.3s ease-out 0.12s;
+}
+@-webkit-keyframes linkLabel {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -4px);
+  }
+}
+@keyframes linkLabel {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -4px);
+  }
+}/*# sourceMappingURL=styles.css.map */
